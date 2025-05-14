@@ -263,8 +263,8 @@ def transform_data(data):
         preprocessed_data = preprocessed_data.drop(columns=irrelevant_cols, errors='ignore')  
 
     # --- Data splitting --- 
-    # Membagi data ke dalam training set (train) dan testing set (test) (94% training, 6% testing)
-    train_df, test_df = train_test_split(unsplitted_data, test_size=0.06, random_state=126, shuffle=True)
+    # Membagi data ke dalam training set (train) dan testing set (test) (90% training, 10% testing)
+    train_df, test_df = train_test_split(unsplitted_data, test_size=0.1, random_state=126, shuffle=True)
     train_df.reset_index(drop=True, inplace=True)
     test_df.reset_index(drop=True, inplace=True)
 
