@@ -1,0 +1,9 @@
+numpy
+pandas
+ipython
+researchpy
+scipy
+joblib
+jupyter
+scikit-learn==1.5.2
+streamlit==1.40
